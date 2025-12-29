@@ -11,55 +11,54 @@
       <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
     </a>
     <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-brightgreen?style=for-the-badge" alt="Platform" />
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License" />
   </p>
 
-  <br />
-
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmhmcWc4amZ5eWR4dGd5Z3J5amZ5eWR4dGd5Z3J5amZ5eWR4dGd5Z3J5/xT9IgzoKnwFNmISR8I/giphy.gif" width="600" alt="Demo Preview" /> (Placeholder for App Preview)
-
 </div>
 
-<br />
+---
 
-## ✨ Features
-
-<table>
-  <tr>
-    <td align="center">🎯 <strong>Goal Setting</strong></td>
-    <td align="center">📊 <strong>Progress Tracking</strong></td>
-    <td align="center">🎨 <strong>Modern UI</strong></td>
-  </tr>
-  <tr>
-    <td align="center">Intuitive goal creation and management.</td>
-    <td align="center">Visual insights into your daily progress.</td>
-    <td align="center">Clean, glassmorphic, and animated interface.</td>
-  </tr>
-</table>
-
-<br />
-
-## 🛠 Tech Stack
-
-- **Framework:** React Native (Expo)
-- **Language:** JavaScript / React
-- **Styling:** StyleSheet & Animated API
-
-<br />
-
-## 🚀 Get Started
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/focusgoals.git
-
-# 2. Install dependencies
-npm install
-
-# 3. Run the app
-npm run android  # or npm run ios
-```
+### 📱 App Preview
 
 <div align="center">
-  <small>Made with ❤️ by FocusGoals Team</small>
+  <table>
+    <tr>
+      <td align="center"><strong>Home Screen</strong></td>
+      <td align="center"><strong>Add Goal Modal</strong></td>
+      <td align="center"><strong>Ripple & Delete</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./assets/preview/s1.png" width="250" alt="Home Screen" /></td>
+      <td><img src="./assets/preview/s2.png" width="250" alt="Modal Screen" /></td>
+      <td><img src="./assets/preview/s3.png" width="250" alt="Interaction" /></td>
+    </tr>
+  </table>
 </div>
+
+---
+
+### 🧠 Concepts Mastered
+
+I built this application to master the core fundamentals of mobile development with React Native.
+
+| Area              | Key Concepts Implemented                                                                                       |
+| :---------------- | :------------------------------------------------------------------------------------------------------------- |
+| **🎨 Layouts**    | **Flexbox Deep Dive** (Justify Content, Align Items), Dimensions API, Styling differences between iOS/Android. |
+| **📜 Lists**      | **FlatList** for performance optimization (lazy loading) vs standard ScrollView.                               |
+| **🕹 Interaction** | **Modals**, **Pressable** components, Custom Android Ripple effects, and Conditional Rendering.                |
+| **🎣 State**      | Managing state across components (`useState`), Lifting State Up, and Props drilling.                           |
+
+---
+
+### 🛠 Tech Stack
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=react,js,css" />
+</div>
+
+- **Core:** React Native, Expo Go
+- **Styling:** StyleSheet, Flexbox System
+- **Components:** `FlatList`, `Modal`, `Pressable`, `Image`
+
+---
+
+<div align="center"> <small>Made with ❤️ by <strong>Shivam</strong></small> </div>
