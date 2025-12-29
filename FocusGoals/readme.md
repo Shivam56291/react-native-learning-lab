@@ -61,4 +61,4 @@ I built this application to master the core fundamentals of mobile development w
 
 ---
 
-<div align="center"> <small>Made with ❤️ by <strong>Shivam</strong></small> </div>
+<div align="center"> <small>Made by <strong>Shivam</strong></small> </div>
