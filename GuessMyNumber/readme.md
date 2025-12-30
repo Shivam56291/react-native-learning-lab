@@ -25,19 +25,39 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center"><strong>Start Screen</strong></td>
+      <td align="center"><strong>Start Game Screen</strong></td>
       <td align="center"><strong>Game Screen</strong></td>
-      <td align="center"><strong>Game Over</strong></td>
+      <td align="center"><strong>Game Over Screen</strong></td>
     </tr>
     <tr>
-      <td><img src="./assets/preview/start.png" width="200" alt="Start" /></td>
-      <td><img src="./assets/preview/game.png" width="200" alt="Play" /></td>
-      <td><img src="./assets/preview/over.png" width="200" alt="Over" /></td>
+      <td><img src="./assets/preview/s1.png" width="200" alt="Start" /></td>
+      <td><img src="./assets/preview/s2.png" width="200" alt="Play" /></td>
+      <td><img src="./assets/preview/s3.png" width="200" alt="Over" /></td>
     </tr>
   </table>
 </div>
 
 ---
+
+### 🎮 How to Play
+
+<div align="center">
+
+| Step | Action | Tip |
+| :--: | :---- | :-- |
+| 1️⃣ | Pick a number between **1 and 99** | Make it any number in your mind |
+| 2️⃣ | The phone will try to guess it | It uses a binary search algorithm |
+| 3️⃣ | Tap **Higher** or **Lower** | Guide the phone closer to your number |
+| 4️⃣ | Repeat until guessed | Be honest — no cheating! 😉 |
+| 5️⃣ | Game Over | See how many rounds it took |
+
+</div>
+
+> 💡 Tip: Try to pick tricky numbers to challenge the computer’s guessing logic!
+
+
+---
+
 
 ### 🚀 Mastered Concepts
 
