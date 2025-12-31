@@ -61,29 +61,31 @@
 
 ### 🚀 Mastered Concepts
 
-I focused on building a polished UI and handling complex game logic.
+This project focuses on building a polished, adaptive UI and handling complex game logic with React Native and Expo.
 
 | Module | Key Implementations |
 | :--- | :--- |
-| **🎨 Styling** | **Linear Gradients**, Background Images, Shadow Props (iOS vs Android), and **Global Color Management**. |
-| **🧩 Components** | Building reusable **Custom Buttons**, **Card Wrappers**, and specific Input configurations. |
-| **📱 Adaptation** | Using **SafeAreaView** for notch support and managing soft keyboards. |
-| **🧠 Logic** | Implementing **Alerts**, Binary Search logic (Lower/Greater hints), and recursion. |
-| **🔡 Typography** | Integrating **Custom Fonts** (Google Fonts) and using Icons (`@expo/vector-icons`). |
-| **📜 Lists** | Using **FlatList** to render game logs efficiently. |
+| **🎨 Styling** | **Linear Gradients**, Background Images, Shadow Props (iOS vs Android), **Global Color Management**, and adaptive layout using **Dimensions API & `useWindowDimensions`**. |
+| **🧩 Components** | Building reusable **Custom Buttons**, **Card Wrappers**, Input fields, and handling **keyboard-safe layouts** with `KeyboardAvoidingView`. |
+| **📱 Adaptation** | Responsive UI for **different screen sizes & orientations**, **SafeAreaView** for notches, and **Platform-specific code** for Android/iOS. |
+| **🧠 Logic** | Implementing **Alerts**, Binary Search algorithm for guessing, conditional logic for input validation, and game state management. |
+| **🔡 Typography** | Integrating **Custom Fonts** (`Open Sans`) and using Icons (`@expo/vector-icons`). |
+| **📜 Lists** | Using **FlatList** for efficient rendering of game logs. |
+
 
 ---
 
 ### 🛠 Tech Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=react,js,css" />
+  <img src="https://skillicons.dev/icons?i=react,js" />
 </div>
 
 - **Core:** React Native, Expo Go
-- **UI:** `LinearGradient`, `ImageBackground`, `StyleSheet`
+- **UI:** `LinearGradient`, `ImageBackground`, `StyleSheet`, `KeyboardAvoidingView`
 - **Icons:** Ionicons
 - **Fonts:** Open Sans (via `expo-font`)
+- **Responsive:** `Dimensions API`, `useWindowDimensions`, Platform API
 
 ---
 
