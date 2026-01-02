@@ -13,9 +13,7 @@ export default function MealsOverviewScreen({ route, navigation }) {
     const category = CATEGORIES.find((cat) => cat.id === catId);
     navigation.setOptions({
       title: category.title,
-      headerStyle: { backgroundColor: category.color },
       headerTintColor: "#fff",
-      contentStyle: { backgroundColor: category.color },
     });
   }, [catId, navigation]);
 
