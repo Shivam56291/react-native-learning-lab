@@ -26,11 +26,12 @@
 
 |                       🍱 UI Architecture                       |                 ✨ Micro-Interactions                  |                        🥘 Core Features                         |
 | :------------------------------------------------------------: | :----------------------------------------------------: | :-------------------------------------------------------------: |
-| **Grid-Based Navigation** <br/> Clean, colorful tile interface | **Press Feedback** <br/> Tactile response on every tap |      **Favorites System** <br/> Save your best loved meals      |
-|     **Card Layouts** <br/> Information-rich meal previews      |  **Smooth Transitions** <br/> Native stack navigation  | **Deep Filtering** <br/> Gluten-free, Vegan, & Dietary controls |
-|   **Thematic Styling** <br/> Warm, appetizing color palette    |     **Header Effects** <br/> Dynamic title updates     |        **Rich Details** <br/> Step-by-step instructions         |
+| **Grid-Based Navigation** <br/> Clean, colorful category tiles | **Press Feedback** <br/> Tactile response on every tap |      **Favorites System (Redux)** <br/> Save and manage your favorite meals globally       |
+|     **Card Layouts** <br/> Meals overview with images        |  **Smooth Transitions** <br/> Native stack navigation | **Deep Filtering** <br/> Gluten-free, Vegan & Dietary options |
+|   **Dynamic Styling** <br/> Headers & backgrounds match theme |     **Header Buttons** <br/> Icon buttons for actions  |        **Detailed Recipes** <br/> Ingredients & step-by-step instructions |
 
 </div>
+
 
 ---
 
@@ -45,10 +46,14 @@
 </div>
 
 - **Core Engine:** React Native (v0.73+) with Expo
-- **Navigation:** React Navigation (Native Stack) for performant screen switching
-- **State Management:** React Context API / Redux (Scalable data flow)
-- **Styling:** StyleSheet API with custom dimensional constraints
-- **Assets:** Custom font integration & optimized image rendering
+- **Navigation:** React Navigation (Stack, Drawer, Bottom Tabs)
+- **State Management:** Redux & Redux Toolkit for scalable app-wide state
+  - Manage favorite meals using Redux slices
+  - Dispatch actions (`addFavourite` / `removeFavourite`) to update state
+  - Access state in components via `useSelector` and `useDispatch`
+- **Styling:** StyleSheet API + dynamic header colors
+- **Assets:** Custom fonts and optimized images
+- **Extras:** Header buttons, dynamic navigation options, nested navigators
 
 ---
 
@@ -58,18 +63,34 @@
   <table>
     <tr>
       <td align="center"><b>All Categories</b></td>
-      <td align="center"><b>Meals Overview</b></td>
-      <td align="center"><b>Recipe Detail</b></td>
+      <td align="center"><b>Category Meal List</b></td>
+      <td align="center"><b>Meal Detail</b></td>
     </tr>
     <tr>
       <td align="center">
         <img src="./assets/previews/s1.png" alt="Categories" width="200"/>
       </td>
       <td align="center">
-        <img src="./assets/previews/s2.png" alt="Meals" width="200"/>
+        <img src="./assets/previews/s2.png" alt="Category Meal List" width="200"/>
       </td>
       <td align="center">
-        <img src="./assets/previews/s3.png" alt="Details" width="200"/>
+        <img src="./assets/previews/s3.png" alt="Meal Detail" width="200"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b>Drawer Menu</b></td>
+      <td align="center"><b>Empty Favourites</b></td>
+      <td align="center"><b>With Favourites</b></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./assets/previews/s4.png" alt="Drawer Menu" width="200"/>
+      </td>
+      <td align="center">
+        <img src="./assets/previews/s5.png" alt="Empty Favourites" width="200"/>
+      </td>
+      <td align="center">
+        <img src="./assets/previews/s6.png" alt="With Favourites" width="200"/>
       </td>
     </tr>
   </table>
