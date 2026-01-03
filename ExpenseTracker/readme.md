@@ -34,17 +34,16 @@
 
 </div>
 
-
 ---
+
 <h2 align="center">🧠 App Highlights</h2>
 
 <div align="center">
 
 🧭 React Navigation  🧠 Context API  🎨 Global Theming  
-💾 CRUD Logic  🧩 Reusable Components  ✨ UI Polish  
+💾 CRUD Logic  🧩 Reusable Components  ✨ UI Polish
 
 </div>
-
 
 ---
 
@@ -56,11 +55,11 @@
 
 </div>
 
-- **Framework:** React Native + Expo  
-- **Navigation:** Stack Navigation  
-- **State:** Context API  
-- **UI:** StyleSheet, Custom Buttons, Modals  
-- **Logic:** Editable modes via route params  
+- **Framework:** React Native + Expo
+- **Navigation:** Stack Navigation
+- **State:** Context API
+- **UI:** StyleSheet, Custom Buttons, Modals
+- **Logic:** Editable modes via route params
 
 ---
 
@@ -68,9 +67,9 @@
 
 <div align="center">
 
-| Expense List | Add Expense | Edit Mode |
-|-------------|------------|-----------|
-| 📱 Clean UI | ➕ Modal | ✏️ Dynamic |
+| Expense List | Add Expense | Edit Mode  |
+| ------------ | ----------- | ---------- |
+| 📱 Clean UI  | ➕ Modal    | ✏️ Dynamic |
 
 </div>
 
@@ -79,11 +78,12 @@
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/yourusername/expenseflow.git
-cd expenseflow
+git clone https://github.com/Shivam56291/react-native-learning-lab
+cd ExpenseTracker
 npm install
 npx expo start
 ```
+
 <div align="center">
   <h3>🔮 Roadmap</h3>
   <ul style="list-style: none; padding: 0;">
