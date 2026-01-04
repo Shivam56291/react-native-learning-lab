@@ -24,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "backendUrl": "https://expense-tracker-58636-default-rtdb.firebaseio.com"
     }
   }
 }

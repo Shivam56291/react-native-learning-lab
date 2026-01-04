@@ -67,32 +67,12 @@
 
 <div align="center">
 
-<figure>
-  <img src="assets/previews/s1.png" width="200" />
-  <figcaption>💰 Recent Last 7 Days</figcaption>
-</figure>
+<img src="assets/previews/preview.gif" alt="App Preview" width="400" style="border-radius: 12px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
 
-<figure>
-  <img src="assets/previews/s2.png" width="200" />
-  <figcaption>📋 All Expenses</figcaption>
-</figure>
-
-<figure>
-  <img src="assets/previews/s3.png" width="200" />
-  <figcaption>➕ Log Expense</figcaption>
-</figure>
-
-<figure>
-  <img src="assets/previews/s4.png" width="200" />
-  <figcaption>✏️ Update Your Masterpiece</figcaption>
-</figure>
-
-<figure>
-  <img src="assets/previews/s5.png" width="200" />
-  <figcaption>⚠️ Invalid Input</figcaption>
-</figure>
+<p style="margin-top: 8px; font-size: 14px; color: #555;">Dynamic app preview showing adding, updating, and invalid input handling</p>
 
 </div>
+
 
 
 ---

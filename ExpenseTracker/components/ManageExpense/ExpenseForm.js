@@ -7,7 +7,6 @@ import { GlobalStyles } from "../../constants/styles";
 import { getFormattedDate } from "../../utils/date";
 import { isValidDate } from "../../utils/date";
 
-
 export default function ExpenseForm({
   onCancel,
   onSubmit,
@@ -42,32 +41,29 @@ export default function ExpenseForm({
   }
 
   function submitHandler() {
+    const amountIsValid =
+      !isNaN(+inputs.amount.value) && +inputs.amount.value > 0;
+    const dateIsValid = isValidDate(inputs.date.value);
+    const descriptionIsValid = inputs.description.value.trim().length > 0;
+
+    if (!amountIsValid || !dateIsValid || !descriptionIsValid) {
+      setInputs((prevInputs) => ({
+        ...prevInputs,
+        amount: { value: inputs.amount.value, isValid: amountIsValid },
+        date: { value: inputs.date.value, isValid: dateIsValid },
+        description: {
+          value: inputs.description.value,
+          isValid: descriptionIsValid,
+        },
+      }));
+      return;
+    }
+
     const expenseData = {
       amount: +inputs.amount.value,
       date: new Date(inputs.date.value),
       description: inputs.description.value,
     };
-
-    const amountIsValid = !isNaN(expenseData.amount) && expenseData.amount > 0;
-
-    const dateIsValid = isValidDate(expenseData.date.toString());
-
-    const descriptionIsValid = expenseData.description.trim().length > 0;
-
-    if (!amountIsValid || !dateIsValid || !descriptionIsValid) {
-      setInputs((prevInputs) => {
-        return {
-          ...prevInputs,
-          amount: { value: inputs.amount.value, isValid: amountIsValid },
-          date: { value: inputs.date.value, isValid: dateIsValid },
-          description: {
-            value: inputs.description.value,
-            isValid: descriptionIsValid,
-          },
-        };
-      });
-      return;
-    }
 
     onSubmit(expenseData);
   }
