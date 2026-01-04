@@ -63,15 +63,37 @@
 
 ---
 
-## 📸 Preview (Coming Soon)
+## 📸 Preview
 
 <div align="center">
 
-| Expense List | Add Expense | Edit Mode  |
-| ------------ | ----------- | ---------- |
-| 📱 Clean UI  | ➕ Modal    | ✏️ Dynamic |
+<figure>
+  <img src="assets/previews/s1.png" width="200" />
+  <figcaption>💰 Recent Last 7 Days</figcaption>
+</figure>
+
+<figure>
+  <img src="assets/previews/s2.png" width="200" />
+  <figcaption>📋 All Expenses</figcaption>
+</figure>
+
+<figure>
+  <img src="assets/previews/s3.png" width="200" />
+  <figcaption>➕ Log Expense</figcaption>
+</figure>
+
+<figure>
+  <img src="assets/previews/s4.png" width="200" />
+  <figcaption>✏️ Update Your Masterpiece</figcaption>
+</figure>
+
+<figure>
+  <img src="assets/previews/s5.png" width="200" />
+  <figcaption>⚠️ Invalid Input</figcaption>
+</figure>
 
 </div>
+
 
 ---
 
