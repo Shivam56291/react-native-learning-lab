@@ -6,6 +6,7 @@ import { GlobalStyles } from "../constants/styles";
 import IconButton from "../components/UI/IconButton";
 import Button from "../components/UI/Button";
 import { ExpensesContext } from "../store/expenses-context";
+import ExpenseForm from "../components/ManageExpense/ExpenseForm";
 
 export default function ManageExpense({ route, navigation }) {
   const expensesCtx = useContext(ExpensesContext);
@@ -30,13 +31,13 @@ export default function ManageExpense({ route, navigation }) {
   function confirmHandler() {
     if (isEditing) {
       expensesCtx.updateExpense(editedExpenseId, {
-        description: 'Test Add',
+        description: "Test Add",
         amount: 400,
         date: new Date("2024-01-01"),
       });
     } else {
       expensesCtx.addExpense({
-        description: 'Test Update',
+        description: "Test Update",
         amount: 100,
         date: new Date("2024-01-01"),
       });
@@ -46,6 +47,7 @@ export default function ManageExpense({ route, navigation }) {
 
   return (
     <View style={Styles.container}>
+      <ExpenseForm />
       <View style={Styles.buttons}>
         <Button style={Styles.button} mode="flat" onPress={cancelHandler}>
           Cancel
