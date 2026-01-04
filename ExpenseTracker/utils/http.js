@@ -1,7 +1,9 @@
 import axios from "axios";
 import Constants from "expo-constants";
 
-const BACKEND_URL = Constants.expoConfig.extra.backendUrl;
+const BACKEND_URL =
+  Constants.expoConfig?.extra?.backendUrl ??
+  Constants.manifest?.extra?.backendUrl;
 
 export async function storeExpense(expenseData) {
   const response = await axios.post(

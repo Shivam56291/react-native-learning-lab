@@ -40,8 +40,8 @@
 
 <div align="center">
 
-🧭 React Navigation  🧠 Context API  🎨 Global Theming  
-💾 CRUD Logic  🧩 Reusable Components  ✨ UI Polish
+🧭 React Navigation  🧠 Context API  🌐 Firebase Backend  
+💾 Full CRUD (API)  🧩 Reusable Components  ⏳ Loading & Error UX
 
 </div>
 
@@ -51,15 +51,36 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=react,js,vscode,git,github" />
+<img src="https://skillicons.dev/icons?i=react,js,vscode,git,github,firebase,axios" />
 
 </div>
 
 - **Framework:** React Native + Expo
 - **Navigation:** Stack Navigation
-- **State:** Context API
+- **State Management:** Context API
+- **Backend:** Firebase Realtime Database
+- **Networking:** Axios (REST API)
+- **Async UX:** Loading & Error Overlays
 - **UI:** StyleSheet, Custom Buttons, Modals
-- **Logic:** Editable modes via route params
+- **Logic:** Full CRUD with backend sync
+
+---
+
+## 🌐 Backend & Data Flow
+
+<div align="center">
+
+🔗 **Firebase Realtime Database**  
+📡 **Axios-based REST API**  
+⏳ **Global Loading & Error Handling**
+
+</div>
+
+- Expenses are stored securely in Firebase
+- Axios handles all HTTP requests (POST, GET, UPDATE, DELETE)
+- Backend responses are transformed before updating state
+- Global loading overlay during network calls
+- Centralized error handling with user-friendly feedback
 
 ---
 
@@ -69,10 +90,23 @@
 
 <img src="assets/previews/preview.gif" alt="App Preview" width="400" style="border-radius: 12px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
 
-<p style="margin-top: 8px; font-size: 14px; color: #555;">Dynamic app preview showing adding, updating, and invalid input handling</p>
+<p style="margin-top: 8px; font-size: 14px; color: #555;">Live preview showing backend sync, expense CRUD, validation errors, and loading states
+</p>
 
 </div>
 
+
+---
+
+## ✅ Features
+
+- ➕ Add expenses with backend persistence
+- ✏️ Edit & update existing expenses
+- 🗑️ Delete expenses from Firebase
+- 📥 Fetch expenses on app launch
+- ⏳ Loading overlay during network requests
+- ❌ Error overlay with retry support
+- ✅ Form validation with visual feedback
 
 
 ---
