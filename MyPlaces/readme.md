@@ -27,7 +27,7 @@
 
 <table>
 <tr>
-<td align="center">🔐<br/><b>Authentication</b><br/>Signup/Login via Firebase<br/>Protected routes</td>
+<td align="center">🔐<br/><b>Authentication</b><br/>Signup/Login via Firebase<br/>Auto-login & token refresh<br/>Protected routes</td>
 <td align="center">📍<br/><b>Places</b><br/>Add, view & details<br/>SQLite storage</td>
 <td align="center">🗺️<br/><b>Maps</b><br/>Interactive map<br/>Location picker</td>
 <td align="center">📸<br/><b>Camera</b><br/>Capture photos<br/>Attach to places</td>
@@ -42,7 +42,7 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=react,js,expo,sqlite,firebase,vscode,git,github" alt="Tech Stack" />
+<img src="https://skillicons.dev/icons?i=react,js,sqlite,firebase,vscode,git,github" alt="Tech Stack" />
 
 </div>
 
@@ -77,6 +77,8 @@
 - 📸 Take photos and attach to places
 - 🗄️ Persistent storage using SQLite
 - 🔄 Auto-login with token persistence via AsyncStorage
+- ⏱️ Token refresh 5 minutes before expiry for seamless experience
+- 🛡️ Protected routes based on authentication state
 - ⚡ Smooth transitions & animations
 
 ---
