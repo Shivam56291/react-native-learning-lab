@@ -19,10 +19,17 @@ function SignupScreen() {
       // Use the new login method from AuthContext
       authCtx.login(token, refreshToken, expiresIn);
     } catch (error) {
-      Alert.alert(
-        "Authentication failed",
-        "Could not create user. Please try again later!"
-      );
+      let message = "Could not create user. Please try again later.";
+
+      const errorCode = error?.response?.data?.error?.message;
+
+      if (errorCode === "EMAIL_EXISTS") {
+        message = "Email already exists.";
+      } else if (errorCode === "INVALID_EMAIL") {
+        message = "Please enter a valid email address.";
+      }
+
+      Alert.alert("Authentication failed", message);
       setIsAuthenticating(false);
     }
   }

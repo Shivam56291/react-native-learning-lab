@@ -26,7 +26,7 @@
       "favicon": "./assets/favicon.png"
     },
     "extra": {
-      "EXPO_PUBLIC_FIREBASE_API_KEY": "AIzaSyBaqg6yE4erDBhXEQhYyvig4EOcKahFGIA"
+      "EXPO_PUBLIC_FIREBASE_API_KEY": "PUT_HERE_YOUR_FIREBASE_API_KEY"
     }
   }
 }

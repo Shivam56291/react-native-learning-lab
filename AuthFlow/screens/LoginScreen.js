@@ -19,19 +19,17 @@ function LoginScreen() {
       // Use the new login method from AuthContext
       authCtx.login(token, refreshToken, expiresIn);
     } catch (error) {
+      let message = "Could not log you in. Please try again later.";
 
-      if (error.response) {
-        // Axios response error
-        console.error("Response data:", error.response.data);
-        console.error("Status:", error.response.status);
-      } else {
-        console.error("Error message:", error.message);
+      const errorCode = error?.response?.data?.error?.message;
+
+      if (errorCode === "INVALID_LOGIN_CREDENTIALS") {
+        message = "Invalid email or password.";
+      } else if (errorCode === "INVALID_EMAIL") {
+        message = "Please enter a valid email address.";
       }
 
-      Alert.alert(
-        "Authentication failed",
-        "Could not log you in. Please check your credentials or try again later!"
-      );
+      Alert.alert("Authentication failed", message);
       setIsAuthenticating(false);
     }
   }
