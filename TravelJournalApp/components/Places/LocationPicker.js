@@ -1,10 +1,14 @@
-import { View, StyleSheet, Alert, Linking } from "react-native";
+import { View, StyleSheet, Alert, Linking, Image, Text } from "react-native";
+import { useState } from "react";
 import * as Location from "expo-location";
 
 import { Colors } from "../../constants/colors";
 import OutlinedButton from "../ui/OutlinedButton";
+import MapPreview from "../../util/MapPreview";
 
 export default function LocationPicker() {
+  const [pickedLocation, setPickedLocation] = useState(null);
+
   const [locationPermissionInformation, requestPermission] =
     Location.useForegroundPermissions();
 
@@ -41,7 +45,6 @@ export default function LocationPicker() {
     if (!hasPermission) {
       return;
     }
-    console.log("PERMISSION GRANTED");
     let location = await Location.getLastKnownPositionAsync();
     if (!location) {
       location = await Location.getCurrentPositionAsync({
@@ -49,14 +52,31 @@ export default function LocationPicker() {
         timeout: 5000,
       });
     }
-    console.log(location);
+    setPickedLocation({
+      lat: location.coords.latitude,
+      lng: location.coords.longitude,
+    });
   }
 
-  function pickOnMapHandler() {}
+  function pickOnMapHandler() { }
+  
+  let locationPreview = <Text>No location picked yet.</Text>;
+  if (pickedLocation) {
+    console.log(pickedLocation);
+    locationPreview = (
+      <MapPreview
+        style={Styles.image}
+        lat={pickedLocation.lat}
+        lng={pickedLocation.lng}
+      />
+    );
+  }
 
   return (
     <View>
-      <View style={Styles.mapPreview}></View>
+      <View style={Styles.mapPreview}>
+        {locationPreview}
+      </View>
       <View style={Styles.actions}>
         <OutlinedButton icon="location" onPress={getLocationHandler}>
           Location User
@@ -79,10 +99,15 @@ const Styles = StyleSheet.create({
     backgroundColor: Colors.primary100,
     borderRadius: 4,
     overflow: "hidden",
+    flex: 1,
   },
   actions: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+  },
+  image: {
+    width: "100%",
+    height: "100%",
   },
 });
