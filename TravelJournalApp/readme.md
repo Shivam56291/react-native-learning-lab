@@ -1,39 +1,118 @@
-# 🌍 TravelJournalApp
+<div align="center">
 
-A simple Travel Journal app to save your favorite places with **photo & location**.  
-Designed for learning React Native & Expo, with a focus on functionality over design.  
+<h1>🌍 TravelJournalApp</h1>
+<p><strong>Capture your adventures with photos & maps!</strong></p>
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&width=650&lines=Add+Places+with+Photos+%26+Maps;View+Saved+Places;Smooth+Animations+%26+UX" />
+</a>
+
+<br />
+
+<p>
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" />
+  <img src="https://img.shields.io/badge/Camera-Orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Location-Green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SQLite-Blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Maps-Red?style=for-the-badge" />
+</p>
+
+</div>
 
 ---
 
-## 🖼 App Overview
+## 🎨 App Modules
 
-- **Homepage:**  
-  - Shows a list of saved places  
-  - Each place shows a **photo** and its **address**  
-  - Header has a **+ icon** to add a new place  
+<div align="center">
 
-- **Add Place Screen:**  
-  - Take a photo or select from gallery  
-  - Pick a location on the map  
-  - Save the place to your list  
+<table>
+<tr>
+<td align="center">🖼️<br/><b>Photos</b><br/>Camera & Gallery<br/>Preview images</td>
+<td align="center">📍<br/><b>Location</b><br/>Locate users<br/>Pick & confirm location<br/>Map previews</td>
+<td align="center">📋<br/><b>Places List</b><br/>Add & edit entries<br/>List with photo & address</td>
+<td align="center">💾<br/><b>Storage</b><br/>SQLite DB<br/>Insert & fetch data</td>
+</tr>
+<tr>
+<td align="center">🖌️<br/><b>UI/UX</b><br/>Custom buttons & forms<br/>Global colors & styling</td>
+<td align="center">🗺️<br/><b>Maps</b><br/>Interactive maps<br/>Markers & selection</td>
+<td align="center">✨<br/><b>Animations</b><br/>Fade-in lists<br/>Photo zoom<br/>Pin drop</td>
+<td align="center">⚡<br/><b>Navigation</b><br/>Add Place screen<br/>Place Details screen</td>
+</tr>
+</table>
 
-- **Place Details:**  
-  - View the selected photo and location on a map  
-
----
-
-## 📦 Features
-
-- Add a place with **photo & map location**  
-- View saved places in a scrollable list  
-- Simple & clean layout  
-- Beginner-friendly learning project  
+</div>
 
 ---
 
 ## ⚡ Quick Start
 
 ```bash
-npx create-expo-app TravelJournalApp
+# Clone & navigate
+git clone https://github.com/yourusername/TravelJournalApp
 cd TravelJournalApp
+
+# Install dependencies & start
+npm install
 npx expo start
+
+```
+
+Works on **Android emulator, iOS simulator, and real devices**
+
+---
+
+## 📸 Preview
+
+<div align="center">
+
+<img 
+  src="assets/preview/preview.gif" 
+  width="320" 
+  style="
+    border-radius:16px; 
+    border:1px solid #e5e7eb; 
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  " 
+/>
+
+<br/><br/>
+
+<p>
+  <sub>
+    Capture memories with photo & location · Smooth animations · Interactive map
+  </sub>
+</p>
+
+</div>
+
+```
+
+Works on **Android emulator, iOS simulator, and real devices**
+
+---
+
+## 📸 Preview
+
+<div align="center">
+
+<img
+  src="assets/preview/preview.gif"
+  width="320"
+  style="
+    border-radius:16px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  "
+/>
+
+<br/><br/>
+
+<p>
+  <sub>
+    Capture memories with photo & location · Smooth animations · Interactive map
+  </sub>
+</p>
+
+</div>
+```
