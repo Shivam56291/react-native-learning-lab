@@ -69,7 +69,7 @@
 <div align="center">
 
 <img 
-  src="assets/preview/preview.gif" 
+  src="assets/preview/preview.png" 
   width="320" 
   style="
     border-radius:16px;
@@ -137,5 +137,7 @@ https://expo.dev/notifications
 
 - #### Open on Android/iOS device via Expo Go or a custom development client
 - #### Scan QR code and test Schedule Notification & Send Push Notification buttons
+
+---
 
 <div align="center"> <p>Built by <strong>Shivam</strong></p> <p>Learning & implementing local and push notifications in React Native</p> </div>

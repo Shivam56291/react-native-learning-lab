@@ -98,6 +98,42 @@
 
 ---
 
+## 📲 Try MealExplorer (Android)
+
+<div align="center">
+
+<img src="./assets/icon.png" width="120" alt="MealExplorer App Icon" />
+
+<br />
+
+### 🚀 Download APK
+
+<a href="https://github.com/Shivam56291/react-native-learning-lab/raw/main/MealExplorer/releases/Meal_Explorer.apk">
+  <img src="https://img.shields.io/badge/⬇️_Download_APK-MealExplorer-orange?style=for-the-badge&logo=android" />
+</a>
+
+<br /><br />
+
+### 📸 Scan to Download
+
+<img src="./assets/qr/android-download.jpg" width="180" alt="Scan to download MealExplorer APK" />
+
+<br />
+
+<sub>Scan the QR code using your phone camera to download the APK</sub>
+
+<br /><br />
+
+### 🏗️ Build Powered By
+
+<img src="https://img.shields.io/badge/Built_with-EAS_Build-blue?style=for-the-badge&logo=expo" />
+
+</div>
+
+---
+
+
+
 ### 🚀 Quick Start
 
 ```bash

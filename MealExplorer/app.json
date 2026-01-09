@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "MealExplorer",
+    "name": "Meal Explorer",
     "slug": "MealExplorer",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,14 +9,16 @@
     "newArchEnabled": true,
     "backgroundColor": "#24180f",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -24,8 +26,10 @@
       "edgeToEdgeEnabled": true,
       "package": "com.shivam56291.MealExplorer"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "3386a0ad-be89-48fd-b2ee-11eb13171d1b"
+      }
     }
   }
 }
